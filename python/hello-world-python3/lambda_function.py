@@ -8,5 +8,5 @@ def lambda_handler(event, context):
     print(f"value1 {event['key1']}")
     print(f"value2 {event['key2']}")
     print(f"value3 {event['key3']}")
-    return f"{event['key1']} {event['key2']} {event['key3']}"   # Echo back the first key value
+    return f"Key values => {event['key1']} {event['key2']} {event['key3']}"   # Echo back the first key value
     #raise Exception('Something went wrong')

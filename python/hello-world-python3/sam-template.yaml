@@ -10,7 +10,7 @@ Resources:
     Properties:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
-      CodeUri: s3://pointgenesis-cft/bf8463eab7cc3e41f4e4157665ac7d8a
+      CodeUri: s3://pointgenesis-cft/64a21a00775dbc3499dd142b05a8348c
       Description: A starter AWS Lambda function.
       MemorySize: 128
       Timeout: 3
