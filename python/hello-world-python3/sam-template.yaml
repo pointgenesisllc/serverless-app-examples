@@ -1,20 +1,16 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: A starter AWS Lambda function.
-Parameters:
-  IdentityNameParameter:
-    Type: String
 Resources:
   helloworldpython3:
     Type: AWS::Serverless::Function
     Properties:
       Handler: lambda_function.lambda_handler
-      Runtime: python3.6
-      CodeUri: s3://pointgenesis-cft/64a21a00775dbc3499dd142b05a8348c
+      Runtime: python3.9
+      CodeUri: s3://pointgenesis-cft/9189a3503cb5ca6d6578c1093c4c1040
       Description: A starter AWS Lambda function.
       MemorySize: 128
       Timeout: 3
-      Policies:
-      - SESSendBouncePolicy:
-          IdentityName:
-            Ref: IdentityNameParameter
+      Environment:
+        Variables:
+          S3_BUCKET: pointgenesis-cft
