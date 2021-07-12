@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "lambda-hello-world"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1qadbe72pzo9x"
+s3_prefix = "lambda-hello-world"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "IdentityNameParameter=\"travtest\""
